@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="src/style/output.css" />
     <title>Haalth</title>
 </head>
-<body>
-    <header class="flex bg-green w-full items-center justify-between px-8 transition-all ease duration-300">
+<body class="h-[200vh] overflow-x-hidden">
+    <header class="flex bg-green-600 w-full items-center justify-between px-8 transition-all ease duration-300">
        <img src="img/logo.jpg" style="width: 60px; height: 60px;" alt="">
         <nav> 
-            <ul class="absolute w-full bg-green h-full hidden flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold" id="navLinks">
+          <!--NAVLINKS-->
+            <ul class="absolute w-full bg-green-600 h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%]" id="navLinks">
                 <a href="#">Início</a>
                 <a href="#">Calculadoras Nutricionais</a>
                 <a href="#">Dietas</a>
@@ -19,9 +20,7 @@
                 <a href="#">Login</a>  
             </ul>
         </nav>
-
-
-            
+        <!--MENU INTERATIVO-->
             <div class="flex flex-col" id="menu-interativo">
                 <div class="barrinha"></div>
                 <div class="barrinha"></div>
@@ -34,8 +33,8 @@
 
         <div class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
-                <h2 class="text-2xl mb-6 color-green">NOSSA MISSÃO</h2>
-                <p class=" w-11/12">A Health se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
+                <h2 class="text-2xl mb-6 color-green font-bold">NOSSA MISSÃO</h2>
+                <p class=" w-11/12 max-w-[600px]">A Health se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
             </div>
             <div class="mg-top flex justify-center">
                  <img style="height: 12rem; width: auto;" src="img/imgmissao.jpg"  alt="imagem com alimentos saudáveis e uma placa com a palavra nutrição">   
@@ -54,29 +53,25 @@
                 <p id="resultIMC"></p>
             </div>
         </div>
-
-        <section id="log-in" class="w-full flex">
-          <div id="login-esquerda" class="w-1/2 h-10 bg-[green]">
-            <h2 class="font-size margin-top color-green">LOGIN</h2>
-            <form action="" method="post">
-              <input type="text" name="email" id="email" placeholder="Email" class="input-login">
-              <input type="password" name="senha" id="senha" placeholder="Senha" class="input-login">
-              <button type="submit" class="btn-login">Entrar</button>
-            </form>
-          </div>
-          <div id="login-esquerda" class="w-1/2 h-10 bg-[red]">Oi</div>
        
         </section>
-
-
-
-
-
-
-
-
-
       </div>
+      <!-- Seção de Login-->
+
+      <section id="log-in" class="w-full flex mt-12">
+        <!--Lado esquerdo-->
+        <div id="login-esquerda" class="w-full flex flex-col items-center">
+          <h2 class="font-size margin-top color-green text-center font-bold text-3xl mb-12">LOGIN</h2>
+          <form method="post" class="flex flex-col gap-4 items-center">
+            <input type="text" name="email" id="email" placeholder="Email:" class="input-login  w-[300px] p-2 rounded-md border-black border">
+            <input type="password" name="senha" id="senha" placeholder="Senha:" class="input-login  w-[300px] p-2 rounded-md border-[black] border">
+            <button type="submit" class=" bg-[green] text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
+              </div>
+              
+              <!--Lado direito--> 
+              
+              <div id="login-direita" class="w-1/2 h-10 bg-[red] hidden">Oi</div>
+            </section>
     </main>
   </body> 
   <script src="src/script/index.js"></script>

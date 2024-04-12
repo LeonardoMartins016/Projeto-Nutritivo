@@ -8,22 +8,26 @@
     <title>Haalth</title>
 </head>
 <body>
-    <header class="flex bg-[#55A648] h-16 w-full items-center">
+    <header class="flex bg-[#55A648] w-full items-center justify-between px-8 transition-all ease duration-300">
        <img src="img/logo.jpg" style="width: 60px; height: 60px;" alt="">
-        <nav class="flex justify-end w-full p-8" >
-            <ul class="absolute justify-evenly right-full">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Calculadoras Nutricionais</a></li>
-                <li><a href="#">Dietas</a></li>
-                <li><a href="#">Blogs e Artigos</a></li>
-                <li><a href="#">Login</a></li>
+        <nav>
+            <ul class="absolute right-[-100%] w-full bg-[#55A648] h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold" id="navLinks">
+                <a href="#">Início</a>
+                <a href="#">Calculadoras Nutricionais</a>
+                <a href="#">Dietas</a>
+                <a href="#">Blogs e Artigos</a>
+                <a href="#">Login</a>
             </ul>
+        </nav>
 
+
+            
             <div class="flex flex-col" id="menu-interativo">
                 <div class="barrinha"></div>
                 <div class="barrinha"></div>
                 <div class="barrinha"></div>
             </div>
+
         </nav>
     </header>
     <main>

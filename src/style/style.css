@@ -1,7 +1,6 @@
 
 
 #menu-interativo{
-    margin-top: 30px;
     cursor: pointer;
     gap: 3px;
 }
@@ -20,4 +19,7 @@
 }
 #menu-interativo.menu-ativo .barrinha:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+header{
+padding: 30px;
 }

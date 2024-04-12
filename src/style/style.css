@@ -27,8 +27,7 @@
 }
 
 #navLinks.nav-ativo{
-  display: flex;
-  right: 0;
+    left: 0;
 }
 
 .color-green{

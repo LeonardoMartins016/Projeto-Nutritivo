@@ -41,15 +41,15 @@
             </div>
         </div>
 
-        <div>
-            <div>
-                <h2>Calcule seu IMC:</h2>
-                <p>Calculadora de IMC: Breve descrição sobre o IMC (O que é e para que serve) </p>
+        <div class="w-full flex justify-center text-center flex-col">
+            <div class="flex flex-col items-center mt-8 mb-8">
+                <h2 class="text-2xl mb-6 color-green font-bold">CALCULE SEU IMC</h2>
+                <p class="w-11/12 max-w-[600px]">Calculadora de IMC: Breve descrição sobre o IMC (O que é e para que serve) </p>
             </div>
-            <div>
-                <input type="number" id="kilo" placeholder="Insira seu peso em Kg">
-                <input type="number" id="Altura" placeholder="Insira sua altura em metros">
-                <button id="calculaIMC">Calcular IMC</button>
+            <div class="flex flex-col items-center">
+                <input class="border border-black w-6/12" type="number" id="kilo" placeholder="Insira seu peso em Kg">
+                <input class="border border-black w-6/12" type="number" id="Altura" placeholder="Insira sua altura em metros">
+                <button id="calculaIMC" class="w-6/12">Calcular IMC</button>
                 <p id="resultIMC"></p>
             </div>
         </div>
@@ -58,7 +58,7 @@
       </div>
       <!-- Seção de Login-->
 
-      <section id="log-in" class="w-full flex mt-12">
+      <section id="log-in" class="w-full flex mt-12 mt-[400px]">
         <!--Lado esquerdo-->
         <div id="login-esquerda" class="w-full flex flex-col items-center">
           <h2 class="font-size margin-top color-green text-center font-bold text-3xl mb-12">LOGIN</h2>

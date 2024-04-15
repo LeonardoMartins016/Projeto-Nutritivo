@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main>
-
+      <!--MISSÃO DA EMPRESA-->
         <div class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
                 <h2 class="text-2xl mb-6 color-green font-bold">NOSSA MISSÃO</h2>
@@ -41,16 +41,20 @@
             </div>
         </div>
 
+        <!--CONTEÚDO IMC (ESQUERDA)-->
         <div class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
                 <h2 class="text-2xl mb-6 color-green font-bold">CALCULE SEU IMC</h2>
-                <p class="w-11/12 max-w-[600px]">Calculadora de IMC: Breve descrição sobre o IMC (O que é e para que serve) </p>
+                <p class="w-11/12 max-w-[600px] ">O IMC (Índice de Massa Corporal) é uma medida que avalia se uma pessoa está dentro do peso saudável em relação à sua altura. Calculado dividindo o peso pela altura ao quadrado, ajuda a identificar sobrepeso, obesidade ou peso abaixo do ideal.</p>
             </div>
+        <!--CALCULADORA DE IMC (DIREITA)-->
             <div class="flex flex-col items-center">
-                <input class="border border-black w-6/12" type="number" id="kilo" placeholder="Insira seu peso em Kg">
-                <input class="border border-black w-6/12" type="number" id="Altura" placeholder="Insira sua altura em metros">
-                <button id="calculaIMC" class="w-6/12">Calcular IMC</button>
-                <p id="resultIMC"></p>
+                <p class="mb-2 text-xl color-green">Peso:</p>
+                <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kilo" placeholder="Insira seu peso em Kg">
+                <p class="mb-2 text-xl color-green">Altura:</p>
+                <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="Altura" placeholder="Insira sua altura em metros">
+                <button id="calculaIMC" class="bg-[#008000bd] text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
+                <p class="w-9/12 mt-2 text-xl" id="resultIMC"></p>
             </div>
         </div>
        
@@ -65,7 +69,7 @@
           <form method="post" class="flex flex-col gap-4 items-center">
             <input type="text" name="email" id="email" placeholder="Email:" class="input-login  w-[300px] p-2 rounded-md border-black border">
             <input type="password" name="senha" id="senha" placeholder="Senha:" class="input-login  w-[300px] p-2 rounded-md border-[black] border">
-            <button type="submit" class=" bg-[green] text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
+            <button type="submit" class=" bg-[#008000bd] text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
               </div>
               
               <!--Lado direito--> 

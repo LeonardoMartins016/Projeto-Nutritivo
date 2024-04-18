@@ -5,65 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/output.css" />
-    <title>Haalth</title>
+    <title>Health</title>
 </head>
-<body class="h-[200vh] overflow-x-hidden">
-    <header class="flex bg-green-600 w-full items-center justify-between px-8 transition-all ease duration-300">
-       <img src="img/logo.jpg" style="width: 60px; height: 60px;" alt="">
-        <nav> 
+<body class="overflow-x-hidden">
+    <header class="flex w-full bg-slate-100 items-center justify-between px-8 transition-all ease duration-300">
+       <img src="" style="width: 60px; height: 60px;" alt="">
+        <nav class="flex-grow"> 
           <!--NAVLINKS-->
-            <ul class="absolute w-full bg-green-600 h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%]" id="navLinks">
-                <a id="link1" href="#inicio">Início</a>
-                <a id="link2" href="#IMC">Calculadoras Nutricionais</a>
-                <a id="link3" href="#">Dietas</a>
-                <a id="link4" href="#">Blogs e Artigos</a>
-                <a id="link5" href="#login">Login</a>  
+            <ul class="absolute w-ful bg-slate-100 text-slate-700 h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%] md:left-0 md:w-100% md:h-auto md:flex-row md:static md:items-center md:pt-0 md:justify-end md:mr-32" id="navLinks">
+                <a id="link1" href="#inicio" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Início</a>
+                <a id="link2" href="#IMC" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
+                <a id="link3" href="#" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Dietas</a>
+                <a id="link4" href="#" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Blogs e Artigos</a>
+                <a id="link5" href="#login" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Login</a>  
             </ul>
         </nav>
         <!--MENU INTERATIVO-->
-            <div class="flex flex-col" id="menu-interativo">
-                <div class="barrinha"></div>
-                <div class="barrinha"></div>
-                <div class="barrinha"></div>
-            </div>
-
-        </nav>
+        <div class="md:hidden lg:hidden flex flex-col" id="menu-interativo">
+          <div class="barrinha"></div>
+          <div class="barrinha"></div>
+          <div class="barrinha"></div>
+        </div>
     </header>
-    <main>
+    <main class="text-slate-700">
+      <img src="img/imagem1.svg" alt="mulher" class="md:mx-auto md:my-auto w-full">
       <!--MISSÃO DA EMPRESA-->
         <div id="inicio" class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
-                <h2 class="text-2xl mb-6 color-green font-bold">NOSSA MISSÃO</h2>
-                <p class=" w-11/12 max-w-[600px] text-justify">A Health se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
+                <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">NOSSA MISSÃO</h2>
+                <p class=" w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">A Health se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
             </div>
             <div class="mg-top flex justify-center">
-                 <img style="height: 12rem; width: auto;" src="img/imgmissao.jpg"  alt="imagem com alimentos saudáveis e uma placa com a palavra nutrição">   
+                 <img style="height: 22rem; width: auto;" src="img/imgmissao.jpg"  alt="imagem com alimentos saudáveis e uma placa com a palavra nutrição">   
             </div>
         </div>
 
         <!--CONTEÚDO IMC (ESQUERDA)-->
-        <div class="w-full flex justify-center text-center flex-col">
-            <div class="flex flex-col items-center mt-8 mb-8">
-                <h2 class="text-2xl mb-6 color-green font-bold">CALCULE SEU IMC</h2>
-                <p class="w-11/12 max-w-[600px] text-justify">O IMC (Índice de Massa Corporal) é uma medida que avalia se uma pessoa está dentro do peso saudável em relação à sua altura. Calculado dividindo o peso pela altura ao quadrado, ajuda a identificar sobrepeso, obesidade ou peso abaixo do ideal.</p>
+        <div class="w-full flex justify-center text-center flex-col md:flex-row md:mt-20">
+            <div class="flex flex-col items-center mt-8 mb-8 md:w-1/3">
+                <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">CALCULE SEU IMC</h2>
+                <p class="w-11/12 max-w-[600px] text-justify md:text-center md:text-lg">O IMC (Índice de Massa Corporal) é uma medida que avalia se uma pessoa está dentro do peso saudável em relação à sua altura. Calculado dividindo o peso pela altura ao quadrado, ajuda a identificar sobrepeso, obesidade ou peso abaixo do ideal.</p>
             </div>
 
         <!--CALCULADORA DE IMC (DIREITA)-->
-            <div id="IMC" class="flex flex-col items-center">
-                <p class="mb-2 text-xl color-green">Peso:</p>
+            <div id="IMC" class="flex flex-col items-center md:w-1/3 md:mt-12">
+                <p class="mb-2 text-xl text-slate-900">Peso:</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kilo" placeholder="Insira seu peso em Kg">
-                <p class="mb-2 text-xl color-green">Altura:</p>
+                <p class="mb-2 text-xl text-slate-900">Altura:</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="Altura" placeholder="Insira sua altura em metros">
-                <button id="calculaIMC" class="bg-[#008000bd] text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
+                <button id="calculaIMC" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
                 <p class="w-9/12 mt-2 text-xl" id="resultIMC"></p>
             </div>
         </div>
 
         <!--CONTEÚDO TMB (ESQUERDA)-->
-        <div class="w-full flex justify-center text-center flex-col">
+        <div class="w-full flex justify-center text-center flex-col md:mt-20">
           <div class="flex flex-col items-center mt-8 mb-8">
-              <h2 class="text-2xl mb-6 color-green font-bold">CALCULE SUA TAXA METABÓLICA BASAL</h2>
-              <p class="w-11/12 max-w-[600px] text-justify">A Taxa Metabólica Basal (TMB) é a quantidade mínima de energia que o corpo precisa para manter funções vitais em repouso e é importante para ajustar dietas e atividades físicas.</p>
+              <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">CALCULE SUA TAXA METABÓLICA BASAL</h2>
+              <p class="w-11/12 max-w-[600px] text-justify md:text-center md:text-xl">A Taxa Metabólica Basal (TMB) é a quantidade mínima de energia que o corpo precisa para manter funções vitais em repouso e é importante para ajustar dietas e atividades físicas.</p>
           </div>
       
        <!--CALCULADORA DE TMB (DIREITA)-->
@@ -73,22 +72,22 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>           
               </select>
-              <p class="mb-2 text-xl color-green">Peso:</p>
+              <p class="mb-2 text-xl text-slate-900">Peso:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kiloTMB" placeholder="Insira seu peso em Kg">
-              <p class="mb-2 text-xl color-green">Altura:</p>
+              <p class="mb-2 text-xl text-slate-900">Altura:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="AlturaTMB" placeholder="Insira sua altura em cm">
-              <p class="mb-2 text-xl color-green">Idade:</p>
+              <p class="mb-2 text-xl text-slate-900">Idade:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="IdadeTMB" placeholder="Insira sua idade">
-              <button id="calculaTMB" class="bg-[#008000bd] text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
+              <button id="calculaTMB" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
               <p class="w-9/12 mt-2 text-xl" id="resultTMB"></p>
            </div>
-      </div>
+        </div>
 
        <!--CONTEÚDO PESO IDEAL (ESQUERDA)-->
-       <div class="w-full flex justify-center text-center flex-col">
+       <div class="w-full flex justify-center text-center flex-col md:mt-16">
          <div class="flex flex-col items-center mt-8 mb-8">
-             <h2 class="text-2xl mb-6 color-green font-bold">DESCUBRA SEU PESO IDEAL</h2>
-             <p class="w-11/12 max-w-[600px] text-justify ">Saber o peso ideal é crucial para manter a saúde física e mental. Ajuda a prevenir doenças e aumenta a autoestima. Consultar profissionais de saúde é essencial para determinar metas realistas. Investir no peso ideal é investir na qualidade de vida.</p>
+             <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">DESCUBRA SEU PESO IDEAL</h2>
+             <p class="w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">Saber o peso ideal é crucial para manter a saúde física e mental. Ajuda a prevenir doenças e aumenta a autoestima. Consultar profissionais de saúde é essencial para determinar metas realistas. Investir no peso ideal é investir na qualidade de vida.</p>
          </div>
      
        <!--CALCULADORA DE PESO IDEAL (DIREITA)-->
@@ -98,9 +97,9 @@
                <option value="masculino">Masculino</option>
                <option value="feminino">Feminino</option>           
              </select>
-             <p class="mb-2 text-xl color-green">Altura:</p>
+             <p class="mb-2 text-xl text-slate-900">Altura:</p>
              <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="AlturaPI" placeholder="Insira sua altura em cm">
-             <button id="calculaPeso" class="bg-[#008000bd] text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
+             <button id="calculaPeso" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
              <p class="w-9/12 mt-2 text-xl" id="resultPI"></p>
            </div>
      </div>
@@ -109,12 +108,12 @@
 
       <section id="log-in" class="w-full flex mt-12">
         <!--Lado esquerdo-->
-        <div id="login-esquerda" class="w-full flex flex-col items-center">
-          <h2 id="login" class="font-size margin-top color-green text-center font-bold text-3xl mb-12">LOGIN</h2>
+        <div id="login-esquerda" class="w-full flex flex-col items-center mb-20">
+          <h2 id="login" class="font-size margin-top text-slate-900 text-center font-bold text-3xl mb-12">LOGIN</h2>
           <form method="post" class="flex flex-col gap-4 items-center">
             <input type="text" name="email" id="email" placeholder="Email:" class="input-login  w-[300px] p-2 rounded-md border-black border">
             <input type="password" name="senha" id="senha" placeholder="Senha:" class="input-login  w-[300px] p-2 rounded-md border-[black] border">
-            <button type="submit" class=" bg-[#008000bd] text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
+            <button type="submit" class="bg-sky-950 text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
               </div>
               
               <!--Lado direito--> 

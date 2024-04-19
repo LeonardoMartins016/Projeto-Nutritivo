@@ -16,10 +16,10 @@
 
 
                 <a id="link1" href="/index.html" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Início</a>
-                <a id="link2" href="#IMC" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
+                <a id="link2" href="/index.html#IMC" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
                 <a id="link3" href="" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Dietas</a>
-                <a id="link4" href="#artigos" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Blogs e Artigos</a>
-                <a id="link5" href="#login" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Login</a>  
+                <a id="link4" href="/index.html" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Blogs e Artigos</a>
+                <a id="link5" href="/index.html" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Login</a>  
             </ul>
         </nav>
         <!--MENU INTERATIVO-->
@@ -32,6 +32,31 @@
     <!--MAIN-->
     <main class="text-slate-700">
         <!--Dietas-->
+        <div id="inicio" class="w-full flex justify-center text-center flex-col scroll">
+            <div class="flex flex-col items-center mt-8 mb-8">
+                <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl">Dietas</h2>
+                <p class=" w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">Quando você tem uma dieta saudável, correta e balanceada, seu organismo responde. Seu humor melhora, seu sono passa a ser mais agradável, sua disposição é maior em relação a atividades e sua imunidade aumenta consideravelmente.</p>
+            </div>
+            <div class="mg-top flex justify-center">
+                 <img class="w-80 h-44 md:w-auto md:h-96" src="https://catracalivre.com.br/wp-content/uploads/2018/02/dieta2.jpg"  alt="imagem com alimentos saudáveis e uma placa com a palavra nutrição">   
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-8 mb-8">
+            <label for="objetivo" class="mb-2 text-xl text-slate-900">Selecione seu objetivo:</label>
+            <select name="objetivo" class="mb-2 border border-black w-7/12 h-8 md:w-1/4" id="objetivo">
+                <option value="none">Selecione um objetivo</option>
+                <option value="perder_peso">Perder peso</option>
+                <option value="ganhar_massa">Ganhar massa</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            <button id="gerarDieta" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 md:w-1/12 p-1 rounded-md border border-black">Gerar Dieta</button>
+        </div>
+        
+        <div id="dietaEspecifica" class="hidden flex flex-col items-center mt-8 mb-8">
+            <!-- Aqui será exibida a dieta específica -->
+        </div>
+
           <!-- Footer -->
           <section class="bg-gray-900">
             <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">

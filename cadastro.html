@@ -10,10 +10,11 @@
 <body>
     <header>
 
-        <nav class="flex bg-emerald-400 w-full h-16 p-2 items-center justify-start">
+     <nav class="flex bg-emerald-400 w-full h-16 p-2 items-center justify-start">
             <!--LOGO-->
-            <img src="" alt="logo Health">
-        </nav>
+        <img src="assets/logoNova.png" alt="logo Health" style="height: 100%; width: 80px;">
+        
+    </nav>
     
     </header>
 
@@ -25,15 +26,24 @@
                 <p class="text-sm mb-8">Tenha consultas com especialista para criar uma dieta exclusiva para você e muitos outros benefícios.</p>
             </div>
             <div>
-                <p class="text-lg">e-mail:</p>
-                <input class="border rounded-md border-black w-11/12 h-8" type="email"">
-                <p class="text-lg mt-6">senha:</p>
-                <input type="password" name="senha" class="h-8 w-11/12 border rounded-md border-black" id="senhaLogin">
-                <button class="mt-4 rounded-md bg-emerald-300 px-4 py-1" id="botaoLogin"><a href="index.html">Continuar</a></button>
+                <p class="text-lg">Nome completo:</p>
+                <input class="border rounded-md border-gray-600 w-11/12 h-8" type="text"" id="nomeCadastro">
+                <p class="text-lg mt-6">Data de nascimento:</p>
+                <input type="date" class="h-8 w-11/12 border rounded-md border-gray-600 " id="dataCadastro">
+                <p class="text-lg mt-6">CPF:</p>
+                <input type="number" class="h-8 w-11/12 border rounded-md border-gray-600 " id="cpfCadastro">
+                <p class="text-lg mt-6">Telefone:</p>
+                <input type="number" class="h-8 w-11/12 border rounded-md border-gray-600 " id="telefoneCadastro">
+                <p class="text-lg mt-6">E-mail:</p>
+                <input type="email" class="h-8 w-11/12 border rounded-md border-gray-600 " id="emailCadastro">
+                <p class="text-lg mt-6">Senha:</p>
+                <input type="password" class="h-8 w-11/12 border rounded-md border-gray-600 " id="senhaCadastro">
+
+                <button class="mt-6 rounded-md bg-emerald-300 px-4 py-1" id="botaoLogin"><a href="index.html">Cadastrar</a></button>
             </div>
 
             <div class="mt-8">
-                <p>Não tem cadastro?<a href="cadastro.html"> Cadastre-se</a></p>
+                <p>Já tem cadastro?<a href="login.html"> Entrar</a></p>
             </div>
         </div>
     </main>

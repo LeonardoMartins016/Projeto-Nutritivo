@@ -152,3 +152,18 @@ function calculadoraPesoIdeal() {
 
 }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var backToTopButton = document.getElementById("backToTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+}
+
+document.getElementById("backToTop").addEventListener("click", function(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

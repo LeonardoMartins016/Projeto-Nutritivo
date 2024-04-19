@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 #menu-interativo {
   cursor: pointer;
   gap: 5px;

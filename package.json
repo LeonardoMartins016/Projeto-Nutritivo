@@ -3,6 +3,9 @@
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
-    "dev":"npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
   }
 }

@@ -9,6 +9,10 @@
   gap: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .barrinha {
   background-color: rgb(0, 0, 0);
   width: 30px;
@@ -32,12 +36,4 @@
 
 .color-green{
   color: #55A648;
-<<<<<<< HEAD
 }
-=======
-}
-
-.back-green{
-  background-color: #61be5267;
-}
->>>>>>> 10a9f3c4c3925152506d67ca88504e1afc6845e8

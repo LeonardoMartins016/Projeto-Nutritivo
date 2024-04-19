@@ -13,11 +13,11 @@
         <nav class="flex-grow"> 
           <!--NAVLINKS-->
             <ul class="absolute w-ful bg-slate-100 text-slate-700 h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%] md:left-0 md:w-100% md:h-auto md:flex-row md:static md:items-center md:pt-0 md:justify-end md:mr-32" id="navLinks">
-                <a id="link1" href="#inicio" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Início</a>
-                <a id="link2" href="#IMC" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
-                <a id="link3" href="#" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Dietas</a>
-                <a id="link4" href="#" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Blogs e Artigos</a>
-                <a id="link5" href="#login" class="md:hover:opacity-80 md:hover:scale-105 transition-all duration-200">Login</a>  
+                <a id="link1" href="#inicio" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Início</a>
+                <a id="link2" href="#IMC" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
+                <a id="link3" href="#" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Dietas</a>
+                <a id="link4" href="#" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Blogs e Artigos</a>
+                <a id="link5" href="#login" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Login</a>  
             </ul>
         </nav>
         <!--MENU INTERATIVO-->
@@ -32,7 +32,7 @@
       <!--MISSÃO DA EMPRESA-->
         <div id="inicio" class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
-                <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">NOSSA MISSÃO</h2>
+                <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl">NOSSA MISSÃO</h2>
                 <p class=" w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">A <strong>Health</strong> se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
             </div>
             <div class="mg-top flex justify-center">
@@ -43,17 +43,17 @@
         <!--CONTEÚDO IMC (ESQUERDA)-->
         <div class="w-full flex justify-center text-center flex-col md:flex-row md:mt-20">
             <div class="flex flex-col items-center mt-8 mb-8 md:w-1/3">
-                <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">CALCULE SEU IMC</h2>
+                <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl">CALCULE SEU IMC</h2>
                 <p class="w-11/12 max-w-[600px] text-justify md:text-center md:text-lg">O IMC (Índice de Massa Corporal) é uma medida que avalia se uma pessoa está dentro do peso saudável em relação à sua altura. Calculado dividindo o peso pela altura ao quadrado, ajuda a identificar sobrepeso, obesidade ou peso abaixo do ideal.</p>
             </div>
 
         <!--CALCULADORA DE IMC (DIREITA)-->
             <div id="IMC" class="flex flex-col items-center md:w-1/3 md:mt-12">
-                <p class="mb-2 text-xl text-slate-900">Peso:</p>
+                <p class="mb-2 text-xl text-emerald-500">Peso:</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kilo" placeholder="Insira seu peso em Kg">
-                <p class="mb-2 text-xl text-slate-900">Altura:</p>
+                <p class="mb-2 text-xl text-emerald-500">Altura:</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="Altura" placeholder="Insira sua altura em metros">
-                <button id="calculaIMC" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
+                <button id="calculaIMC" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
                 <p class="w-9/12 mt-2 text-xl" id="resultIMC"></p>
             </div>
         </div>
@@ -61,7 +61,7 @@
         <!--CONTEÚDO TMB (ESQUERDA)-->
         <div class="w-full flex justify-center text-center flex-col md:mt-20">
           <div class="flex flex-col items-center mt-8 mb-8">
-              <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">CALCULE SUA TAXA METABÓLICA BASAL</h2>
+              <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl">CALCULE SUA TAXA METABÓLICA BASAL</h2>
               <p class="w-11/12 max-w-[600px] text-justify md:text-center md:text-xl">A Taxa Metabólica Basal (TMB) é a quantidade mínima de energia que o corpo precisa para manter funções vitais em repouso e é importante para ajustar dietas e atividades físicas.</p>
           </div>
       
@@ -72,13 +72,13 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>           
               </select>
-              <p class="mb-2 text-xl text-slate-900">Peso:</p>
+              <p class="mb-2 text-xl text-emerald-500">Peso:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="kiloTMB" placeholder="Insira seu peso em Kg">
-              <p class="mb-2 text-xl text-slate-900">Altura:</p>
+              <p class="mb-2 text-xl text-emerald-500">Altura:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaTMB" placeholder="Insira sua altura em cm">
-              <p class="mb-2 text-xl text-slate-900">Idade:</p>
+              <p class="mb-2 text-xl text-emerald-500">Idade:</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="IdadeTMB" placeholder="Insira sua idade">
-              <button id="calculaTMB" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
+              <button id="calculaTMB" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
               <p class="w-9/12 mt-2 text-xl" id="resultTMB"></p>
            </div>
         </div>
@@ -86,7 +86,7 @@
        <!--CONTEÚDO PESO IDEAL (ESQUERDA)-->
        <div class="w-full flex justify-center text-center flex-col md:mt-16">
          <div class="flex flex-col items-center mt-8 mb-8">
-             <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">DESCUBRA SEU PESO IDEAL</h2>
+             <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl">DESCUBRA SEU PESO IDEAL</h2>
              <p class="w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">Saber o peso ideal é crucial para manter a saúde física e mental. Ajuda a prevenir doenças e aumenta a autoestima. Consultar profissionais de saúde é essencial para determinar metas realistas. Investir no peso ideal é investir na qualidade de vida.</p>
          </div>
      
@@ -97,9 +97,9 @@
                <option value="masculino">Masculino</option>
                <option value="feminino">Feminino</option>           
              </select>
-             <p class="mb-2 text-xl text-slate-900">Altura:</p>
+             <p class="mb-2 text-xl text-emerald-500">Altura:</p>
              <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaPI" placeholder="Insira sua altura em cm">
-             <button id="calculaPeso" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
+             <button id="calculaPeso" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
              <p class="w-9/12 mt-2 text-xl" id="resultPI"></p>
            </div>
      </div>
@@ -120,6 +120,58 @@
               
               <div id="login-direita" class="w-1/2 h-10 bg-[red] hidden">Oi</div>
             </section>
+
+          <!-- Seção de Artigos e Blogs-->
+          <section class="py-20">
+            <h2 class="text-2xl mb-6 text-emerald-500 font-bold md:text-4xl text-center">Artigos e Blogs</h1>
+            <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://rapidolight.com.br/wp-content/uploads/2016/11/Sem-t%C3%ADtulo-3-365x365.png" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-emerald-500">Saúde</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">10 hábitos que aceleram o metabolismo e ajudam a emagrecer</p>
+                    <p class="text-md font-light text-gray-400">Quer emagrecer? Confira os 10 hábitos que irão te ajudar na perda de peso</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#metabolismo</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#alimentação</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://rapidolight.com.br/wp-content/uploads/2016/08/wsi-imageoptim-caminhar-1024x681.jpg" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-emerald-500">Saúde</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">11 benefícios da caminhada para o corpo e a mente</p>
+                    <p class="text-md font-light text-gray-400">Ela controla a pressão, diabetes, protege contra demência e ainda emagrece Você conhece algum exercício mais fácil de praticar do que a caminhada?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#exercícios</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#saudável</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://rapidolight.com.br/wp-content/uploads/2016/09/img-365x365.jpg" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-emerald-500">Dieta</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Como ter uma alimentação saudável para emagrecer</p>
+                    <p class="text-md font-light text-gray-400">A prática de uma alimentação saudável e a importância em realizar atividades físicas é tema de jornais, revistas, blogs, programas de TV, etc, e consequentemente, pauta na vida de diversas pessoas.</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#alimentação</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#dietas</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </section>
     </main>
   </body> 
   <script src="src/script/index.js"></script>

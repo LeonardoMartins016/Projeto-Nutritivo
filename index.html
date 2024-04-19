@@ -33,7 +33,7 @@
         <div id="inicio" class="w-full flex justify-center text-center flex-col">
             <div class="flex flex-col items-center mt-8 mb-8">
                 <h2 class="text-2xl mb-6 text-slate-900 font-bold md:text-4xl">NOSSA MISSÃO</h2>
-                <p class=" w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">A Health se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
+                <p class=" w-11/12 max-w-[600px] text-justify md:text-xl md:text-center">A <strong>Health</strong> se compromete a auxiliar pessoas em busca do corpo ideal ou de melhor qualidade de vida, oferecendo dietas e planos personalizados para diversos objetivos, como perda de peso ou ganho de massa muscular.</p>
             </div>
             <div class="mg-top flex justify-center">
                  <img class="w-80 h-44 md:w-auto md:h-[22rem]" src="img/imgmissao.jpg"  alt="imagem com alimentos saudáveis e uma placa com a palavra nutrição">   
@@ -67,18 +67,18 @@
       
        <!--CALCULADORA DE TMB (DIREITA)-->
             <div class="flex flex-col items-center">
-              <select name="genero" class="mb-2 border border-black w-7/12 h-8" id="genero">
+              <select name="genero" class="mb-2 border border-black w-7/12 h-8 md:w-1/4" id="genero">
                 <option value="none">Gênero</option>
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>           
               </select>
               <p class="mb-2 text-xl text-slate-900">Peso:</p>
-              <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kiloTMB" placeholder="Insira seu peso em Kg">
+              <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="kiloTMB" placeholder="Insira seu peso em Kg">
               <p class="mb-2 text-xl text-slate-900">Altura:</p>
-              <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="AlturaTMB" placeholder="Insira sua altura em cm">
+              <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaTMB" placeholder="Insira sua altura em cm">
               <p class="mb-2 text-xl text-slate-900">Idade:</p>
-              <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="IdadeTMB" placeholder="Insira sua idade">
-              <button id="calculaTMB" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
+              <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="IdadeTMB" placeholder="Insira sua idade">
+              <button id="calculaTMB" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
               <p class="w-9/12 mt-2 text-xl" id="resultTMB"></p>
            </div>
         </div>
@@ -92,14 +92,14 @@
      
        <!--CALCULADORA DE PESO IDEAL (DIREITA)-->
            <div class="flex flex-col items-center">
-             <select name="genero" class="mb-2 border border-black w-7/12 h-8" id="generoPI">
+             <select name="genero" class="mb-2 border border-black w-7/12 h-8 md:w-1/4" id="generoPI">
                <option value="none">Gênero</option>
                <option value="masculino">Masculino</option>
                <option value="feminino">Feminino</option>           
              </select>
              <p class="mb-2 text-xl text-slate-900">Altura:</p>
-             <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="AlturaPI" placeholder="Insira sua altura em cm">
-             <button id="calculaPeso" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular TMB</button>
+             <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaPI" placeholder="Insira sua altura em cm">
+             <button id="calculaPeso" class="bg-sky-950 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
              <p class="w-9/12 mt-2 text-xl" id="resultPI"></p>
            </div>
      </div>
@@ -113,7 +113,7 @@
           <form method="post" class="flex flex-col gap-4 items-center">
             <input type="text" name="email" id="email" placeholder="Email:" class="input-login  w-[300px] p-2 rounded-md border-black border">
             <input type="password" name="senha" id="senha" placeholder="Senha:" class="input-login  w-[300px] p-2 rounded-md border-[black] border">
-            <button type="submit" class="bg-sky-950 text-[white] w-[100px] rounded-md hover:opacity-75 self-start">Entrar</button>
+            <button type="submit" class="bg-sky-950 text-[white] w-[100px] h-[30px] rounded-md hover:opacity-75 self-start">Entrar</button>
               </div>
               
               <!--Lado direito--> 

@@ -8,11 +8,14 @@
     <title>Health</title>
 </head>
 <body class="overflow-x-hidden">
-    <header class="flex w-full bg-slate-100 items-center justify-between px-8 transition-all ease duration-300">
-       <img src="assets/image 1.svg" style="width: 60px; height: 60px;" alt="">
-        <nav class="flex-grow"> 
+    <header class="flex w-full bg-slate-100 items-center justify-between px-8 transition-all ease duration-300 py-3">
+       <img src="assets/logoNova.png" alt="" class="md:w-[95px] md:h-[75px] w-[58px] h-[48px]">
+        <nav> 
+
           <!--NAVLINKS-->
-            <ul class="absolute w-ful bg-slate-100 text-slate-700 h-full flex flex-col top-[59px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%] md:left-0 md:w-100% md:h-auto md:flex-row md:static md:items-center md:pt-0 md:justify-end md:mr-32" id="navLinks">
+            <ul class="absolute w-full bg-slate-100 text-slate-700 h-full flex flex-col top-[72px] items-center gap-10 uppercase transition-all ease-in duration-200 pt-3 font-bold left-[100%] md:left-0 md:w-100% md:h-auto md:flex-row md:static md:items-center md:pt-0 md:justify-end" id="navLinks">
+
+
                 <a id="link1" href="#inicio" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Início</a>
                 <a id="link2" href="#IMC" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Calculadoras Nutricionais</a>
                 <a id="link3" href="#" class="md:hover:text-emerald-300 md:hover:scale-105 transition-all duration-200">Dietas</a>
@@ -27,6 +30,7 @@
           <div class="barrinha"></div>
         </div>
     </header>
+    <!--MAIN-->
     <main class="text-slate-700">
         <img src="img/imagem1.svg" alt="mulher" class="md:mx-auto md:my-auto w-full">
       <!--MISSÃO DA EMPRESA-->
@@ -49,9 +53,9 @@
 
         <!--CALCULADORA DE IMC (DIREITA)-->
             <div id="IMC" class="flex flex-col items-center md:w-1/3 md:mt-12">
-                <p class="mb-2 text-xl text-emerald-500">Peso:</p>
+                <p class="mb-2 text-xl text-emerald-500">Peso</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="kilo" placeholder="Insira seu peso em Kg">
-                <p class="mb-2 text-xl text-emerald-500">Altura:</p>
+                <p class="mb-2 text-xl text-emerald-500">Altura</p>
                 <input class="mb-2 border border-black w-7/12 h-8 p-2" type="number" id="Altura" placeholder="Insira sua altura em metros">
                 <button id="calculaIMC" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 p-1 rounded-md border border-black">Calcular IMC</button>
                 <p class="w-9/12 mt-2 text-xl" id="resultIMC"></p>
@@ -72,11 +76,11 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>           
               </select>
-              <p class="mb-2 text-xl text-emerald-500">Peso:</p>
+              <p class="mb-2 text-xl text-emerald-500">Peso</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="kiloTMB" placeholder="Insira seu peso em Kg">
-              <p class="mb-2 text-xl text-emerald-500">Altura:</p>
+              <p class="mb-2 text-xl text-emerald-500">Altura</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaTMB" placeholder="Insira sua altura em cm">
-              <p class="mb-2 text-xl text-emerald-500">Idade:</p>
+              <p class="mb-2 text-xl text-emerald-500">Idade</p>
               <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="IdadeTMB" placeholder="Insira sua idade">
               <button id="calculaTMB" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
               <p class="w-9/12 mt-2 text-xl" id="resultTMB"></p>
@@ -97,7 +101,7 @@
                <option value="masculino">Masculino</option>
                <option value="feminino">Feminino</option>           
              </select>
-             <p class="mb-2 text-xl text-emerald-500">Altura:</p>
+             <p class="mb-2 text-xl text-emerald-500">Altura</p>
              <input class="mb-2 border border-black w-7/12 h-8 p-2 md:w-1/4" type="number" id="AlturaPI" placeholder="Insira sua altura em cm">
              <button id="calculaPeso" class="bg-emerald-500 text-white mt-2 mb-2 w-4/12 md:w-1/5 p-1 rounded-md border border-black">Calcular TMB</button>
              <p class="w-9/12 mt-2 text-xl" id="resultPI"></p>

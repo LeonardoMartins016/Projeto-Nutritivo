@@ -10,6 +10,7 @@ const links4 = document.querySelector('#link4');
 const links5 = document.querySelector('#link5');
 
 
+
 menu.addEventListener('click', () => {
   menu.classList.toggle('menu-ativo');
   navLinks.classList.toggle('nav-ativo')
@@ -42,10 +43,8 @@ links5.addEventListener('click', () => {
 
 //Calculadora de IMC
 
-document.getElementById("calculaIMC").addEventListener("click", function(){
-
-  calculadoraIMC(event); 
-
+document.getElementById("calculaIMC").addEventListener("click", function(event){
+  calculadoraIMC(event)
 });
 
 function calculadoraIMC(event) {
@@ -79,12 +78,15 @@ function calculadoraIMC(event) {
 
 //Calculadora de TMB
 
-document.getElementById("calculaTMB").addEventListener("click", function(){
-calculadoraTMB()
+
+const botaoTMB = document.querySelector("#calculaTMB");
+
+botaoTMB.addEventListener("click", function(){
+  calculadoraTMB();
 });
 
 function calculadoraTMB(){
-
+  
   var kg = document.getElementById("kiloTMB").value;
   var alt = document.getElementById("AlturaTMB").value;
   var idd = document.getElementById("IdadeTMB").value;
@@ -94,7 +96,7 @@ function calculadoraTMB(){
   var idade = parseFloat(idd);
   var genero = sexo;
   var TMB = 0;
-
+  
   var mensagemTMB = document.getElementById("resultTMB");
   
   if (genero == "masculino") {
@@ -102,11 +104,11 @@ function calculadoraTMB(){
     TMB = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
     
     mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB.toFixed(2) + ' calorias.';
-
+    
   } else if (genero == "feminino") {
-
+    
     TMB =  (10 * peso) + (6.25 * altura) - (5 * idade) - 161;
-
+    
     mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB.toFixed(2) + ' calorias.';
 
   } else{

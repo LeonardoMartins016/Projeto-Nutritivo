@@ -1941,6 +1941,11 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-s-2xl {
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+
 .rounded-bl {
   border-bottom-left-radius: 0.25rem;
 }

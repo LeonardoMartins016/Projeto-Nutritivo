@@ -93,7 +93,7 @@ function calculadoraTMB(){
   var altura = parseFloat(alt);
   var idade = parseFloat(idd);
   var genero = sexo;
-  var TMB = "";
+  var TMB = 0;
 
   var mensagemTMB = document.getElementById("resultTMB");
   
@@ -101,22 +101,19 @@ function calculadoraTMB(){
     
     TMB = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
     
-    mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB + 'calorias';
+    mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB.toFixed(2) + ' calorias.';
 
   } else if (genero == "feminino") {
 
     TMB =  (10 * peso) + (6.25 * altura) - (5 * idade) - 161;
 
-    mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB + 'calorias';
+    mensagemTMB.innerHTML = 'Sua taxa metabólica basal é ' + TMB.toFixed(2) + ' calorias.';
 
   } else{
 
     mensagemTMB.innerHTML = 'Por favor, selecione seu gênero.';
 
   }
-
-  event.preventDefault();
-
 }
 
 //Calculadora de Peso Ideal
@@ -152,3 +149,18 @@ function calculadoraPesoIdeal() {
 
 }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var backToTopButton = document.getElementById("backToTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+}
+
+document.getElementById("backToTop").addEventListener("click", function(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

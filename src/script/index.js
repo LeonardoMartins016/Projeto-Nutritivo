@@ -138,13 +138,13 @@ function calculadoraPesoIdeal() {
 
    var resultadoPI = (50 + (0.91 * (altura - 152.4))).toFixed(2);
 
-   exibeResultPI.innerHTML = 'Seu peso ideal é ' + resultadoPI;
+   exibeResultPI.innerHTML = 'Seu peso ideal é ' + resultadoPI + 'Kg';
 
   } else if (genero == "feminino") {
 
   var resultadoPI = (45.5 + (0.91 * (altura - 152.4))).toFixed(2);
 
-  exibeResultPI.innerHTML = 'Seu peso ideal é ' + resultadoPI;
+  exibeResultPI.innerHTML = 'Seu peso ideal é ' + resultadoPI + 'Kg';
 
   } else {
     mensagemTMB.innerHTML = 'Por favor, selecione seu gênero.';

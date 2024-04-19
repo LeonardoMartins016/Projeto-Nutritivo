@@ -1,3 +1,5 @@
+//Menu interativo
+
 const menu = document.querySelector('#menu-interativo');
 const navLinks = document.querySelector('#navLinks');
 const resultado = document.querySelector('#resultIMC');
@@ -38,6 +40,7 @@ links5.addEventListener('click', () => {
   navLinks.classList.remove('nav-ativo')
 } )
 
+//Calculadora de IMC
 
 document.getElementById("calculaIMC").addEventListener("click", function(){
 
@@ -73,6 +76,8 @@ function calculadoraIMC(event) {
   event.preventDefault();
 
 };
+
+//Calculadora de TMB
 
 document.getElementById("calculaTMB").addEventListener("click", function(){
 calculadoraTMB()
@@ -114,6 +119,7 @@ function calculadoraTMB(){
 
 }
 
+//Calculadora de Peso Ideal
 
 document.getElementById("calculaPeso").addEventListener("click", function(){
   calculadoraPesoIdeal();
